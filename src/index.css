@@ -1,1 +1,53 @@
 @import "tailwindcss";
+
+/* Custom Color Palette - Calm & Natural Spa Vibe */
+:root {
+  --color-primary: #A8C3A0; /* Soft Sage Green */
+  --color-secondary: #F2E8D5; /* Warm Beige */
+  --color-accent: #4B6043; /* Deep Olive */
+  --color-text: #2E2E2E; /* Charcoal Gray */
+  --color-background: #FAFAF8; /* Off White */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Smooth transitions */
+* {
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
