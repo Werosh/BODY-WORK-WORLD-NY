@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
+  <!-- Home Page -->
+  <url>
+    <loc>https://www.bodyworkworldny.com/</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Services Section -->
+  <url>
+    <loc>https://www.bodyworkworldny.com/#services</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Bodywork Service -->
+  <url>
+    <loc>https://www.bodyworkworldny.com/#services/bodywork</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Waxing Service -->
+  <url>
+    <loc>https://www.bodyworkworldny.com/#services/waxing</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Back Facials Service -->
+  <url>
+    <loc>https://www.bodyworkworldny.com/#services/back-facials</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Facials Service -->
+  <url>
+    <loc>https://www.bodyworkworldny.com/#services/facials</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Microdermabrasion Service -->
+  <url>
+    <loc>https://www.bodyworkworldny.com/#services/microdermabrasion</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- HydraFacial Service -->
+  <url>
+    <loc>https://www.bodyworkworldny.com/#services/hydrafacial</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Forms Section -->
+  <url>
+    <loc>https://www.bodyworkworldny.com/#forms</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Gallery Section -->
+  <url>
+    <loc>https://www.bodyworkworldny.com/#gallery</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Shop Section -->
+  <url>
+    <loc>https://www.bodyworkworldny.com/#shop</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Contact Section -->
+  <url>
+    <loc>https://www.bodyworkworldny.com/#contact</loc>
+    <lastmod>2025-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+</urlset>
+

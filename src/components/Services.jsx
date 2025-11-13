@@ -1,10 +1,38 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { services } from "../data/constants";
 
 function Services({ onBookService }) {
+  // Structured data for services
+  const servicesStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: services.map((service, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": "Service",
+        name: service.title,
+        description: service.description,
+        provider: {
+          "@type": "BeautySalon",
+          name: "BODY WORK WORLD NY",
+        },
+      },
+    })),
+  };
+
   return (
     <section id="services" className="py-16 sm:py-20 lg:py-24 bg-[#FAFAF8]">
+      <Helmet>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(servicesStructuredData),
+          }}
+        />
+      </Helmet>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

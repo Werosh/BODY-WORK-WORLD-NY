@@ -1,0 +1,40 @@
+# robots.txt for BODY WORK WORLD NY
+# Allow all search engines to crawl the entire site
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Allow all important pages
+Allow: /
+Allow: /#home
+Allow: /#services
+Allow: /#forms
+Allow: /#gallery
+Allow: /#shop
+Allow: /#contact
+
+# Sitemap location
+Sitemap: https://www.bodyworkworldny.com/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /images/
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
