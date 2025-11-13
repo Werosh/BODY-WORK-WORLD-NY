@@ -12,7 +12,7 @@ function Contact({ formData, onInputChange, onSubmit }) {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4B6043] mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4B6043] mb-4 font-heading">
             Contact Us
           </h2>
           <p className="text-base sm:text-lg text-[#2E2E2E]">
@@ -46,7 +46,7 @@ function Contact({ formData, onInputChange, onSubmit }) {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-[#4B6043] mb-1">
+                  <h3 className="text-xl font-semibold text-[#4B6043] mb-1 font-heading">
                     Phone
                   </h3>
                   <a
@@ -76,7 +76,7 @@ function Contact({ formData, onInputChange, onSubmit }) {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-[#4B6043] mb-1">
+                  <h3 className="text-xl font-semibold text-[#4B6043] mb-1 font-heading">
                     Email
                   </h3>
                   <a
@@ -111,7 +111,7 @@ function Contact({ formData, onInputChange, onSubmit }) {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-[#4B6043] mb-1">
+                  <h3 className="text-xl font-semibold text-[#4B6043] mb-1 font-heading">
                     Service Areas
                   </h3>
                   <p className="text-[#2E2E2E]">

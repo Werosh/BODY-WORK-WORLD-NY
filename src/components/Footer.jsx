@@ -29,8 +29,8 @@ function Footer({ scrollToSection }) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold text-[#4B6043] mb-4">
-              BODYWORKWORLDNY
+            <h3 className="text-2xl font-bold text-[#4B6043] mb-4 font-heading">
+              BODY WORK WORLD NY
             </h3>
             <p className="text-[#2E2E2E]">
               Professional bodywork and spa services for your wellness journey.
@@ -39,7 +39,7 @@ function Footer({ scrollToSection }) {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-[#4B6043] mb-4">
+            <h4 className="text-lg font-semibold text-[#4B6043] mb-4 font-heading">
               Quick Links
             </h4>
             <ul className="space-y-2">
@@ -58,7 +58,7 @@ function Footer({ scrollToSection }) {
 
           {/* Social Media */}
           <div>
-            <h4 className="text-lg font-semibold text-[#4B6043] mb-4">
+            <h4 className="text-lg font-semibold text-[#4B6043] mb-4 font-heading">
               Follow Us
             </h4>
             <div className="flex space-x-4">
@@ -86,7 +86,7 @@ function Footer({ scrollToSection }) {
 
         <div className="border-t border-[#A8C3A0] pt-8 text-center">
           <p className="text-[#2E2E2E]">
-            &copy; {new Date().getFullYear()} BODYWORKWORLDNY. All rights
+            &copy; {new Date().getFullYear()} BODY WORK WORLD NY. All rights
             reserved.
           </p>
         </div>

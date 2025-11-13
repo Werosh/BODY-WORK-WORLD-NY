@@ -13,7 +13,7 @@ function Shop({ onAddToCart }) {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4B6043] mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4B6043] mb-4 font-heading">
             Shop
           </h2>
           <p className="text-base sm:text-lg text-[#2E2E2E]">
@@ -45,7 +45,7 @@ function Shop({ onAddToCart }) {
               </div>
 
               <div className="p-5">
-                <h3 className="text-xl font-semibold text-[#4B6043] mb-3">
+                <h3 className="text-xl font-semibold text-[#4B6043] mb-3 font-heading">
                   {item.name}
                 </h3>
                 <button

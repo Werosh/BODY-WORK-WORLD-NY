@@ -13,7 +13,7 @@ function Forms({ onDownloadForm }) {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4B6043] mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4B6043] mb-4 font-heading">
             Client Forms
           </h2>
           <p className="text-base sm:text-lg text-[#2E2E2E] max-w-2xl mx-auto mb-8">
@@ -46,7 +46,7 @@ function Forms({ onDownloadForm }) {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#4B6043] text-center mb-4">
+              <h3 className="text-xl font-semibold text-[#4B6043] text-center mb-4 font-heading">
                 {form}
               </h3>
               <button

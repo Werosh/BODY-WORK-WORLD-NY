@@ -49,9 +49,9 @@ function Header({ activeSection, isMenuOpen, setIsMenuOpen, scrollToSection }) {
           >
             <button
               onClick={() => scrollToSection("home")}
-              className="text-xl sm:text-2xl font-bold text-[#4B6043] tracking-wide hover:text-[#A8C3A0] transition-colors"
+              className="text-xl sm:text-2xl font-bold text-[#4B6043] tracking-wide hover:text-[#A8C3A0] transition-colors font-heading"
             >
-              BODYWORKWORLDNY
+              BODY WORK WORLD NY
             </button>
           </motion.div>
 

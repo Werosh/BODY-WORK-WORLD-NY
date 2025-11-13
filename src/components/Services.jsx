@@ -13,7 +13,7 @@ function Services({ onBookService }) {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4B6043] mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4B6043] mb-4 font-heading">
             Our Services
           </h2>
           <p className="text-base sm:text-lg text-[#2E2E2E] max-w-2xl mx-auto">
@@ -42,7 +42,7 @@ function Services({ onBookService }) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="text-2xl font-bold text-white">
+                  <h3 className="text-2xl font-bold text-white font-heading">
                     {service.title}
                   </h3>
                 </div>

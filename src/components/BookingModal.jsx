@@ -31,7 +31,7 @@ function BookingModal({
             className="bg-white rounded-2xl p-6 sm:p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto"
           >
             <div className="flex justify-between items-center mb-6">
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#4B6043]">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#4B6043] font-heading">
                 Book Appointment
               </h2>
               <button
