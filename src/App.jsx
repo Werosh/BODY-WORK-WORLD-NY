@@ -142,7 +142,7 @@ function App() {
 
   // Dynamic meta tags based on active section
   const getMetaTags = () => {
-    const baseUrl = "https://www.bodyworkworldny.com";
+    const baseUrl = "https://bodyworkworld.com";
     const baseTitle = "BODY WORK WORLD NY - Professional Spa & Bodywork Services";
     
     const metaConfig = {

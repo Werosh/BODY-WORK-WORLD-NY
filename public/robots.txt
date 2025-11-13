@@ -19,7 +19,7 @@ Allow: /#shop
 Allow: /#contact
 
 # Sitemap location
-Sitemap: https://www.bodyworkworldny.com/sitemap.xml
+Sitemap: https://bodyworkworld.com/sitemap.xml
 
 # Crawl-delay (optional, helps prevent server overload)
 Crawl-delay: 1
