@@ -50,10 +50,10 @@ function Contact({ formData, onInputChange, onSubmit }) {
                     Phone
                   </h3>
                   <a
-                    href="tel:+16313818800"
+                    href="tel:+16313528453"
                     className="text-[#4B6043] hover:text-[#A8C3A0] transition-colors"
                   >
-                    +1 (631) 381-8800
+                    (631) 352-8453
                   </a>
                   <p className="text-sm text-gray-600">Text/Call available</p>
                 </div>
