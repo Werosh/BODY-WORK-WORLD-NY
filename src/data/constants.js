@@ -94,6 +94,7 @@ export const clientForms = [
   "New Client Intake Form",
   "Bodywork Form",
   "Microdermabrasion Client Consent Form",
+  "Waxing Consent Form",
   "Health History Form",
   "Consent Form",
 ];

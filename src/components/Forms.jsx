@@ -55,13 +55,15 @@ function Forms({ onDownloadForm }) {
               >
                 {form === "New Client Intake Form" ||
                 form === "Bodywork Form" ||
-                form === "Microdermabrasion Client Consent Form"
+                form === "Microdermabrasion Client Consent Form" ||
+                form === "Waxing Consent Form"
                   ? "Fill Out Online"
                   : "Download PDF"}
               </button>
               {(form === "New Client Intake Form" ||
                 form === "Bodywork Form" ||
-                form === "Microdermabrasion Client Consent Form") && (
+                form === "Microdermabrasion Client Consent Form" ||
+                form === "Waxing Consent Form") && (
                 <p className="text-xs text-gray-600 text-center mt-2">
                   Fill online or print to complete
                 </p>

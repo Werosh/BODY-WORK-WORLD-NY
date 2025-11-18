@@ -13,6 +13,7 @@ import BookingModal from "./components/BookingModal";
 import IntakeForm from "./components/forms/IntakeForm";
 import BodyworkForm from "./components/forms/BodyworkForm";
 import MicrodermabrasionForm from "./components/forms/MicrodermabrasionForm";
+import WaxingForm from "./components/forms/WaxingForm";
 import ScrollToTop from "./components/ScrollToTop";
 import { navItems } from "./data/constants";
 
@@ -23,6 +24,7 @@ function App() {
   const [isBodyworkFormOpen, setIsBodyworkFormOpen] = useState(false);
   const [isMicrodermabrasionFormOpen, setIsMicrodermabrasionFormOpen] =
     useState(false);
+  const [isWaxingFormOpen, setIsWaxingFormOpen] = useState(false);
   const [selectedService, setSelectedService] = useState("");
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
@@ -141,6 +143,8 @@ function App() {
       setIsBodyworkFormOpen(true);
     } else if (formName === "Microdermabrasion Client Consent Form") {
       setIsMicrodermabrasionFormOpen(true);
+    } else if (formName === "Waxing Consent Form") {
+      setIsWaxingFormOpen(true);
     } else {
       // For other forms, download PDF (placeholder)
       alert(
@@ -159,6 +163,10 @@ function App() {
 
   const closeMicrodermabrasionForm = () => {
     setIsMicrodermabrasionFormOpen(false);
+  };
+
+  const closeWaxingForm = () => {
+    setIsWaxingFormOpen(false);
   };
 
   const handleAddToCart = (item) => {
@@ -304,6 +312,7 @@ function App() {
       {isMicrodermabrasionFormOpen && (
         <MicrodermabrasionForm onClose={closeMicrodermabrasionForm} />
       )}
+      {isWaxingFormOpen && <WaxingForm onClose={closeWaxingForm} />}
     </div>
   );
 }
