@@ -498,10 +498,13 @@ function IntakeForm({ onClose }) {
         </div>
 
         <div className={`p-6 ${showPrintView ? "print-view" : ""}`}>
-          <form onSubmit={handleSubmit} className="space-y-8">
+          <form
+            onSubmit={handleSubmit}
+            className="space-y-8 md:mt-[2000px] mt-[2900px]"
+          >
             {/* Personal Information Section */}
             <section className="border-b-2 border-[#A8C3A0] pb-6">
-              <h3 className="text-xl font-bold text-[#4B6043] mb-4 font-heading">
+              <h3 className="text-xl font-bold text-[#4B6043] mb-4 font-heading ">
                 Personal Information
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
