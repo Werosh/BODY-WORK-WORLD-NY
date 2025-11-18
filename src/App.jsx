@@ -10,7 +10,9 @@ import Shop from "./components/Shop";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import BookingModal from "./components/BookingModal";
-import IntakeForm from "./components/IntakeForm";
+import IntakeForm from "./components/forms/IntakeForm";
+import BodyworkForm from "./components/forms/BodyworkForm";
+import MicrodermabrasionForm from "./components/forms/MicrodermabrasionForm";
 import ScrollToTop from "./components/ScrollToTop";
 import { navItems } from "./data/constants";
 
@@ -18,6 +20,9 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isIntakeFormOpen, setIsIntakeFormOpen] = useState(false);
+  const [isBodyworkFormOpen, setIsBodyworkFormOpen] = useState(false);
+  const [isMicrodermabrasionFormOpen, setIsMicrodermabrasionFormOpen] =
+    useState(false);
   const [selectedService, setSelectedService] = useState("");
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
@@ -41,7 +46,8 @@ function App() {
   useEffect(() => {
     // Initialize EmailJS with public key
     // Replace with your actual EmailJS public key from dashboard
-    const emailjsPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY";
+    const emailjsPublicKey =
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY";
     if (emailjsPublicKey !== "YOUR_PUBLIC_KEY") {
       emailjs.init(emailjsPublicKey);
     }
@@ -131,6 +137,10 @@ function App() {
     // If it's the intake form, open the interactive form
     if (formName === "New Client Intake Form") {
       setIsIntakeFormOpen(true);
+    } else if (formName === "Bodywork Form") {
+      setIsBodyworkFormOpen(true);
+    } else if (formName === "Microdermabrasion Client Consent Form") {
+      setIsMicrodermabrasionFormOpen(true);
     } else {
       // For other forms, download PDF (placeholder)
       alert(
@@ -141,6 +151,14 @@ function App() {
 
   const closeIntakeForm = () => {
     setIsIntakeFormOpen(false);
+  };
+
+  const closeBodyworkForm = () => {
+    setIsBodyworkFormOpen(false);
+  };
+
+  const closeMicrodermabrasionForm = () => {
+    setIsMicrodermabrasionFormOpen(false);
   };
 
   const handleAddToCart = (item) => {
@@ -164,43 +182,56 @@ function App() {
   // Dynamic meta tags based on active section
   const getMetaTags = () => {
     const baseUrl = "https://bodyworkworld.com";
-    const baseTitle = "BODY WORK WORLD NY - Professional Spa & Bodywork Services";
-    
+    const baseTitle =
+      "BODY WORK WORLD NY - Professional Spa & Bodywork Services";
+
     const metaConfig = {
       home: {
         title: `${baseTitle} | NY & FL | Top Rated Spa`,
-        description: "Professional bodywork, massage therapy, facials, waxing, microdermabrasion, and HydraFacial treatments in Manhattan, Long Island, Queens, Tampa, Orlando, and Fort Lauderdale. Book your appointment today!",
-        keywords: "spa, bodywork, massage, massage therapy, spa treatment, Manhattan NY, Long Island NY, Queens NY, Tampa FL, Orlando FL, Fort Lauderdale FL, best spa near me",
+        description:
+          "Professional bodywork, massage therapy, facials, waxing, microdermabrasion, and HydraFacial treatments in Manhattan, Long Island, Queens, Tampa, Orlando, and Fort Lauderdale. Book your appointment today!",
+        keywords:
+          "spa, bodywork, massage, massage therapy, spa treatment, Manhattan NY, Long Island NY, Queens NY, Tampa FL, Orlando FL, Fort Lauderdale FL, best spa near me",
         url: baseUrl,
       },
       services: {
         title: `Spa Services - Bodywork, Facials, Waxing | ${baseTitle}`,
-        description: "Professional spa services including bodywork, massage therapy, facials, waxing, microdermabrasion, and HydraFacial treatments. Licensed therapists in NY & FL.",
-        keywords: "spa services, bodywork, massage therapy, facials, waxing, microdermabrasion, hydrafacial, back facials, therapeutic massage, spa treatments, NY spa services, FL spa services",
+        description:
+          "Professional spa services including bodywork, massage therapy, facials, waxing, microdermabrasion, and HydraFacial treatments. Licensed therapists in NY & FL.",
+        keywords:
+          "spa services, bodywork, massage therapy, facials, waxing, microdermabrasion, hydrafacial, back facials, therapeutic massage, spa treatments, NY spa services, FL spa services",
         url: `${baseUrl}/#services`,
       },
       forms: {
         title: `Client Forms - Intake & Health History | ${baseTitle}`,
-        description: "Download client intake forms, health history forms, and consent forms for your spa appointment at BODY WORK WORLD NY.",
-        keywords: "spa forms, client intake form, health history form, consent form, spa appointment forms",
+        description:
+          "Download client intake forms, health history forms, and consent forms for your spa appointment at BODY WORK WORLD NY.",
+        keywords:
+          "spa forms, client intake form, health history form, consent form, spa appointment forms",
         url: `${baseUrl}/#forms`,
       },
       gallery: {
         title: `Spa Gallery - Treatment Photos | ${baseTitle}`,
-        description: "View our spa gallery showcasing professional bodywork, facial treatments, and relaxing spa environment at BODY WORK WORLD NY.",
-        keywords: "spa gallery, spa photos, treatment photos, bodywork photos, facial treatment photos, spa environment",
+        description:
+          "View our spa gallery showcasing professional bodywork, facial treatments, and relaxing spa environment at BODY WORK WORLD NY.",
+        keywords:
+          "spa gallery, spa photos, treatment photos, bodywork photos, facial treatment photos, spa environment",
         url: `${baseUrl}/#gallery`,
       },
       shop: {
         title: `Spa Products & Gift Sets | ${baseTitle}`,
-        description: "Shop luxury spa products, relaxation oils, gift sets, candles, and face creams from BODY WORK WORLD NY. Perfect for self-care and gifts.",
-        keywords: "spa products, relaxation oil, spa gift sets, luxury candles, face cream, spa gifts, wellness products",
+        description:
+          "Shop luxury spa products, relaxation oils, gift sets, candles, and face creams from BODY WORK WORLD NY. Perfect for self-care and gifts.",
+        keywords:
+          "spa products, relaxation oil, spa gift sets, luxury candles, face cream, spa gifts, wellness products",
         url: `${baseUrl}/#shop`,
       },
       contact: {
         title: `Contact Us - Book Appointment | ${baseTitle}`,
-        description: "Contact BODY WORK WORLD NY to book your spa appointment. Serving Manhattan, Long Island, Queens, Tampa, Orlando, and Fort Lauderdale. Call (631) 352-8453.",
-        keywords: "contact spa, book spa appointment, spa booking, spa phone number, spa email, spa location, Manhattan spa, Long Island spa, Queens spa, Tampa spa, Orlando spa, Fort Lauderdale spa",
+        description:
+          "Contact BODY WORK WORLD NY to book your spa appointment. Serving Manhattan, Long Island, Queens, Tampa, Orlando, and Fort Lauderdale. Call (631) 352-8453.",
+        keywords:
+          "contact spa, book spa appointment, spa booking, spa phone number, spa email, spa location, Manhattan spa, Long Island spa, Queens spa, Tampa spa, Orlando spa, Fort Lauderdale spa",
         url: `${baseUrl}/#contact`,
       },
     };
@@ -217,15 +248,18 @@ function App() {
         <meta name="description" content={currentMeta.description} />
         <meta name="keywords" content={currentMeta.keywords} />
         <link rel="canonical" href={currentMeta.url} />
-        
+
         {/* Open Graph */}
         <meta property="og:title" content={currentMeta.title} />
         <meta property="og:description" content={currentMeta.description} />
         <meta property="og:url" content={currentMeta.url} />
-        
+
         {/* Twitter */}
         <meta property="twitter:title" content={currentMeta.title} />
-        <meta property="twitter:description" content={currentMeta.description} />
+        <meta
+          property="twitter:description"
+          content={currentMeta.description}
+        />
       </Helmet>
 
       <Header
@@ -266,6 +300,10 @@ function App() {
       />
 
       {isIntakeFormOpen && <IntakeForm onClose={closeIntakeForm} />}
+      {isBodyworkFormOpen && <BodyworkForm onClose={closeBodyworkForm} />}
+      {isMicrodermabrasionFormOpen && (
+        <MicrodermabrasionForm onClose={closeMicrodermabrasionForm} />
+      )}
     </div>
   );
 }

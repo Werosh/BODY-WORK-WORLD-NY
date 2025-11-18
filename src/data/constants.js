@@ -81,11 +81,19 @@ export const shopItems = [
   },
 ];
 
-export const navItems = ["home", "services", "forms", "gallery", "shop", "contact"];
+export const navItems = [
+  "home",
+  "services",
+  "forms",
+  "gallery",
+  "shop",
+  "contact",
+];
 
 export const clientForms = [
   "New Client Intake Form",
+  "Bodywork Form",
+  "Microdermabrasion Client Consent Form",
   "Health History Form",
   "Consent Form",
 ];
-
