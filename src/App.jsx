@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
+import emailjs from "@emailjs/browser";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
@@ -9,12 +10,14 @@ import Shop from "./components/Shop";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import BookingModal from "./components/BookingModal";
+import IntakeForm from "./components/IntakeForm";
 import ScrollToTop from "./components/ScrollToTop";
 import { navItems } from "./data/constants";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isIntakeFormOpen, setIsIntakeFormOpen] = useState(false);
   const [selectedService, setSelectedService] = useState("");
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
@@ -33,6 +36,16 @@ function App() {
     time: "",
     file: null,
   });
+
+  // Initialize EmailJS
+  useEffect(() => {
+    // Initialize EmailJS with public key
+    // Replace with your actual EmailJS public key from dashboard
+    const emailjsPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY";
+    if (emailjsPublicKey !== "YOUR_PUBLIC_KEY") {
+      emailjs.init(emailjsPublicKey);
+    }
+  }, []);
 
   // Handle scroll events
   useEffect(() => {
@@ -115,11 +128,19 @@ function App() {
   };
 
   const handleDownloadForm = (formName) => {
-    // In production, this would download an actual PDF
-    // For now, we'll show an alert
-    alert(
-      `Downloading ${formName}...\n\nIn production, this would download a PDF file.`
-    );
+    // If it's the intake form, open the interactive form
+    if (formName === "New Client Intake Form") {
+      setIsIntakeFormOpen(true);
+    } else {
+      // For other forms, download PDF (placeholder)
+      alert(
+        `Downloading ${formName}...\n\nIn production, this would download a PDF file.`
+      );
+    }
+  };
+
+  const closeIntakeForm = () => {
+    setIsIntakeFormOpen(false);
   };
 
   const handleAddToCart = (item) => {
@@ -243,6 +264,8 @@ function App() {
         onSubmit={handleBookingSubmit}
         onServiceChange={setSelectedService}
       />
+
+      {isIntakeFormOpen && <IntakeForm onClose={closeIntakeForm} />}
     </div>
   );
 }

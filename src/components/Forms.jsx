@@ -53,8 +53,13 @@ function Forms({ onDownloadForm }) {
                 onClick={() => onDownloadForm(form)}
                 className="w-full bg-[#4B6043] text-white py-2 rounded-lg hover:bg-[#3a4a34] transition-colors duration-300"
               >
-                Download PDF
+                {form === "New Client Intake Form" ? "Fill Out Online" : "Download PDF"}
               </button>
+              {form === "New Client Intake Form" && (
+                <p className="text-xs text-gray-600 text-center mt-2">
+                  Fill online or print to complete
+                </p>
+              )}
             </motion.div>
           ))}
         </div>
