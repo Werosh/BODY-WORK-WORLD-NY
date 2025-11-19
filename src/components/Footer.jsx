@@ -198,7 +198,7 @@ function Footer({ scrollToSection }) {
         <div className="border-t border-white/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-white/70 text-sm">
-              &copy; {new Date().getFullYear()} BODY WORK WORLD NY. All rights
+              &copy; {new Date().getFullYear()} BODY WORK WORLD. All rights
               reserved.
             </p>
             <div className="flex items-center space-x-2 text-white/70 text-sm">
