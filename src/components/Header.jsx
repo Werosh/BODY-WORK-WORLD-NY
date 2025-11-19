@@ -40,7 +40,7 @@ function Header({ activeSection, isMenuOpen, setIsMenuOpen, scrollToSection }) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-md">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-20 ">
           {/* Logo */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -51,10 +51,10 @@ function Header({ activeSection, isMenuOpen, setIsMenuOpen, scrollToSection }) {
               onClick={() => scrollToSection("home")}
               className="flex items-center hover:opacity-80 transition-opacity"
             >
-              <img 
-                src="/Logo.png" 
-                alt="BODY WORK WORLD NY" 
-                className="h-12 sm:h-16 w-auto"
+              <img
+                src="/Logo.png"
+                alt="BODY WORK WORLD NY"
+                className="h-12 md:h-[150px] w-auto mt-10"
               />
             </button>
           </motion.div>
@@ -65,10 +65,10 @@ function Header({ activeSection, isMenuOpen, setIsMenuOpen, scrollToSection }) {
               <button
                 key={item}
                 onClick={() => handleNavClick(item)}
-                className={`text-sm font-medium uppercase tracking-wide transition-colors pb-1 ${
+                className={`text-md lg:text-lg font-bold uppercase tracking-wide transition-colors pb-1 ${
                   activeSection === item
-                    ? "text-[#4B6043] border-b-2 border-[#4B6043]"
-                    : "text-[#2E2E2E] hover:text-[#A8C3A0]"
+                    ? "text-[#00897B] border-b-2 border-[#00897B]"
+                    : "text-[#2E2E2E] hover:text-[#26A69A]"
                 }`}
               >
                 {item}
@@ -79,12 +79,12 @@ function Header({ activeSection, isMenuOpen, setIsMenuOpen, scrollToSection }) {
           {/* Mobile Menu Toggle */}
           <button
             onClick={handleMenuToggle}
-            className="lg:hidden p-2 rounded-md hover:bg-[#F2E8D5] transition-colors focus:outline-none focus:ring-2 focus:ring-[#A8C3A0]"
+            className="lg:hidden p-2 rounded-md hover:bg-[#F2E8D5] transition-colors focus:outline-none focus:ring-2 focus:ring-[#26A69A]"
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
           >
             <svg
-              className="w-6 h-6 text-[#4B6043]"
+              className="w-6 h-6 text-[#00897B]"
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -130,7 +130,7 @@ function Header({ activeSection, isMenuOpen, setIsMenuOpen, scrollToSection }) {
                       onClick={() => handleNavClick(item)}
                       className={`block w-full text-left px-4 py-3 text-sm font-medium uppercase tracking-wide transition-colors ${
                         activeSection === item
-                          ? "bg-[#A8C3A0] text-white"
+                          ? "bg-[#00897B] text-white"
                           : "text-[#2E2E2E] hover:bg-[#F2E8D5] active:bg-[#F2E8D5]"
                       }`}
                     >

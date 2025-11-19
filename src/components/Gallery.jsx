@@ -13,7 +13,7 @@ function Gallery() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4B6043] mb-4 font-heading">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#00897B] mb-4 font-heading">
             Gallery
           </h2>
           <p className="text-base sm:text-lg text-[#2E2E2E]">
@@ -38,7 +38,7 @@ function Gallery() {
                   backgroundColor: "#F2E8D5",
                 }}
               />
-              <div className="absolute inset-0 bg-[#4B6043]/0 group-hover:bg-[#4B6043]/60 transition-colors duration-300 flex items-center justify-center">
+              <div className="absolute inset-0 bg-[#00897B]/0 group-hover:bg-[#00897B]/60 transition-colors duration-300 flex items-center justify-center">
                 <svg
                   className="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   fill="none"

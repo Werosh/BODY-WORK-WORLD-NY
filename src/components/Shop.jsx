@@ -13,7 +13,7 @@ function Shop({ onAddToCart }) {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4B6043] mb-4 font-heading">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#00897B] mb-4 font-heading">
             Shop
           </h2>
           <p className="text-base sm:text-lg text-[#2E2E2E]">
@@ -39,18 +39,18 @@ function Shop({ onAddToCart }) {
                     backgroundColor: "#F2E8D5",
                   }}
                 />
-                <div className="absolute top-4 right-4 bg-[#A8C3A0] text-white px-3 py-1 rounded-full text-sm font-semibold">
+                <div className="absolute top-4 right-4 bg-[#26A69A] text-white px-3 py-1 rounded-full text-sm font-semibold">
                   {item.price}
                 </div>
               </div>
 
               <div className="p-5">
-                <h3 className="text-xl font-semibold text-[#4B6043] mb-3 font-heading">
+                <h3 className="text-xl font-semibold text-[#00897B] mb-3 font-heading">
                   {item.name}
                 </h3>
                 <button
                   onClick={() => onAddToCart(item)}
-                  className="w-full bg-[#4B6043] text-white py-2 rounded-lg hover:bg-[#3a4a34] transition-colors duration-300 font-medium"
+                  className="w-full bg-[#FF6B35] text-white py-2 rounded-lg hover:bg-[#FFA726] transition-colors duration-300 font-medium"
                 >
                   Add to Cart
                 </button>
@@ -60,7 +60,7 @@ function Shop({ onAddToCart }) {
         </div>
 
         <div className="text-center mt-12">
-          <p className="inline-block bg-[#A8C3A0] text-white px-6 py-3 rounded-full text-lg font-semibold">
+          <p className="inline-block bg-[#26A69A] text-white px-6 py-3 rounded-full text-lg font-semibold">
             More Products Coming Soon!
           </p>
         </div>

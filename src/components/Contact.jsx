@@ -12,7 +12,7 @@ function Contact({ formData, onInputChange, onSubmit }) {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4B6043] mb-4 font-heading">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#00897B] mb-4 font-heading">
             Contact Us
           </h2>
           <p className="text-base sm:text-lg text-[#2E2E2E]">
@@ -30,7 +30,7 @@ function Contact({ formData, onInputChange, onSubmit }) {
           >
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-[#A8C3A0] rounded-full flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#26A69A] rounded-full flex items-center justify-center">
                   <svg
                     className="w-6 h-6 text-white"
                     fill="none"
@@ -46,12 +46,12 @@ function Contact({ formData, onInputChange, onSubmit }) {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-[#4B6043] mb-1 font-heading">
+                  <h3 className="text-xl font-semibold text-[#00897B] mb-1 font-heading">
                     Phone
                   </h3>
                   <a
                     href="tel:+16313528453"
-                    className="text-[#4B6043] hover:text-[#A8C3A0] transition-colors"
+                    className="text-[#00897B] hover:text-[#26A69A] transition-colors"
                   >
                     (631) 352-8453
                   </a>
@@ -60,7 +60,7 @@ function Contact({ formData, onInputChange, onSubmit }) {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-[#A8C3A0] rounded-full flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#26A69A] rounded-full flex items-center justify-center">
                   <svg
                     className="w-6 h-6 text-white"
                     fill="none"
@@ -76,12 +76,12 @@ function Contact({ formData, onInputChange, onSubmit }) {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-[#4B6043] mb-1 font-heading">
+                  <h3 className="text-xl font-semibold text-[#00897B] mb-1 font-heading">
                     Email
                   </h3>
                   <a
                     href="mailto:bodyworkworld@gmail.com"
-                    className="text-[#4B6043] hover:text-[#A8C3A0] transition-colors"
+                    className="text-[#00897B] hover:text-[#26A69A] transition-colors"
                   >
                     bodyworkworld@gmail.com
                   </a>
@@ -89,7 +89,7 @@ function Contact({ formData, onInputChange, onSubmit }) {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-[#A8C3A0] rounded-full flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#26A69A] rounded-full flex items-center justify-center">
                   <svg
                     className="w-6 h-6 text-white"
                     fill="none"
@@ -111,14 +111,14 @@ function Contact({ formData, onInputChange, onSubmit }) {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-[#4B6043] mb-1 font-heading">
+                  <h3 className="text-xl font-semibold text-[#00897B] mb-1 font-heading">
                     Address
                   </h3>
                   <a
                     href="https://www.google.com/maps/search/?api=1&query=29+W+36th+St,+New+York,+NY+10018"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#4B6043] hover:text-[#A8C3A0] transition-colors"
+                    className="text-[#00897B] hover:text-[#26A69A] transition-colors"
                   >
                     29 W 36th St., New York, NY 10018, USA
                   </a>
@@ -126,7 +126,7 @@ function Contact({ formData, onInputChange, onSubmit }) {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-[#A8C3A0] rounded-full flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#26A69A] rounded-full flex items-center justify-center">
                   <svg
                     className="w-6 h-6 text-white"
                     fill="none"
@@ -142,7 +142,7 @@ function Contact({ formData, onInputChange, onSubmit }) {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-[#4B6043] mb-1 font-heading">
+                  <h3 className="text-xl font-semibold text-[#00897B] mb-1 font-heading">
                     Service Areas
                   </h3>
                   <p className="text-[#2E2E2E]">
@@ -178,7 +178,7 @@ function Contact({ formData, onInputChange, onSubmit }) {
           >
             <form onSubmit={onSubmit} className="space-y-6">
               <div>
-                <label className="block text-sm font-semibold text-[#4B6043] mb-2">
+                <label className="block text-sm font-semibold text-[#00897B] mb-2">
                   Your Name
                 </label>
                 <input
@@ -193,7 +193,7 @@ function Contact({ formData, onInputChange, onSubmit }) {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-[#4B6043] mb-2">
+                <label className="block text-sm font-semibold text-[#00897B] mb-2">
                   Email Address
                 </label>
                 <input
@@ -208,7 +208,7 @@ function Contact({ formData, onInputChange, onSubmit }) {
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-[#4B6043] mb-2">
+                <label className="block text-sm font-semibold text-[#00897B] mb-2">
                   Message
                 </label>
                 <textarea
@@ -224,7 +224,7 @@ function Contact({ formData, onInputChange, onSubmit }) {
 
               <button
                 type="submit"
-                className="w-full bg-[#4B6043] text-white py-4 rounded-lg font-semibold hover:bg-[#3a4a34] transition-colors duration-300"
+                className="w-full bg-[#FF6B35] text-white py-4 rounded-lg font-semibold hover:bg-[#FFA726] transition-colors duration-300"
               >
                 Send Message
               </button>

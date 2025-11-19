@@ -21,7 +21,7 @@ function Hero({ scrollToSection }) {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(135deg, rgba(168, 195, 160, 0.85) 0%, rgba(242, 232, 213, 0.85) 100%)",
+              "linear-gradient(135deg, rgba(0, 137, 123, 0.85) 0%, rgba(255, 167, 38, 0.85) 100%)",
           }}
         />
       </div>
@@ -52,7 +52,7 @@ function Hero({ scrollToSection }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           onClick={() => scrollToSection("services")}
-          className="bg-[#4B6043] text-white px-8 sm:px-12 py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-[#3a4a34] hover:scale-105 shadow-lg transition-all duration-300"
+          className="bg-[#FF6B35] text-white px-8 sm:px-12 py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-[#FFA726] hover:scale-105 shadow-lg transition-all duration-300"
         >
           Book Appointment
         </motion.button>

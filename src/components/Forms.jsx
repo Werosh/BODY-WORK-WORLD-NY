@@ -13,7 +13,7 @@ function Forms({ onDownloadForm }) {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4B6043] mb-4 font-heading">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#00897B] mb-4 font-heading">
             Client Forms
           </h2>
           <p className="text-base sm:text-lg text-[#2E2E2E] max-w-2xl mx-auto mb-8">
@@ -31,7 +31,7 @@ function Forms({ onDownloadForm }) {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300"
             >
-              <div className="flex items-center justify-center w-16 h-16 bg-[#A8C3A0] rounded-full mb-4 mx-auto">
+              <div className="flex items-center justify-center w-16 h-16 bg-[#26A69A] rounded-full mb-4 mx-auto">
                 <svg
                   className="w-8 h-8 text-white"
                   fill="none"
@@ -46,12 +46,12 @@ function Forms({ onDownloadForm }) {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#4B6043] text-center mb-4 font-heading">
+              <h3 className="text-xl font-semibold text-[#00897B] text-center mb-4 font-heading">
                 {form}
               </h3>
               <button
                 onClick={() => onDownloadForm(form)}
-                className="w-full bg-[#4B6043] text-white py-2 rounded-lg hover:bg-[#3a4a34] transition-colors duration-300"
+                className="w-full bg-[#FF6B35] text-white py-2 rounded-lg hover:bg-[#FFA726] transition-colors duration-300"
               >
                 {form === "New Client Intake Form" ||
                 form === "Bodywork Form" ||

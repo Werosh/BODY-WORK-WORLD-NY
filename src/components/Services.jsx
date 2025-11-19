@@ -41,7 +41,7 @@ function Services({ onBookService }) {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#4B6043] mb-4 font-heading">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#00897B] mb-4 font-heading">
             Our Services
           </h2>
           <p className="text-base sm:text-lg text-[#2E2E2E] max-w-2xl mx-auto">
@@ -82,7 +82,7 @@ function Services({ onBookService }) {
                 </p>
                 <button
                   onClick={() => onBookService(service.title)}
-                  className="w-full bg-[#A8C3A0] text-white py-3 rounded-lg font-semibold hover:bg-[#4B6043] transition-colors duration-300"
+                  className="w-full bg-[#FF6B35] text-white py-3 rounded-lg font-semibold hover:bg-[#FFA726] transition-colors duration-300"
                 >
                   Book Now
                 </button>

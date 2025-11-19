@@ -31,7 +31,7 @@ function BookingModal({
             className="bg-white rounded-2xl p-6 sm:p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto"
           >
             <div className="flex justify-between items-center mb-6">
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#4B6043] font-heading">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#00897B] font-heading">
                 Book Appointment
               </h2>
               <button
@@ -56,7 +56,7 @@ function BookingModal({
 
             <form onSubmit={onSubmit} className="space-y-5">
               <div>
-                <label className="block text-sm font-semibold text-[#4B6043] mb-2">
+                <label className="block text-sm font-semibold text-[#00897B] mb-2">
                   Full Name *
                 </label>
                 <input
@@ -71,7 +71,7 @@ function BookingModal({
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-[#4B6043] mb-2">
+                <label className="block text-sm font-semibold text-[#00897B] mb-2">
                   Phone Number *
                 </label>
                 <input
@@ -86,7 +86,7 @@ function BookingModal({
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-[#4B6043] mb-2">
+                <label className="block text-sm font-semibold text-[#00897B] mb-2">
                   Email
                 </label>
                 <input
@@ -100,7 +100,7 @@ function BookingModal({
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-[#4B6043] mb-2">
+                <label className="block text-sm font-semibold text-[#00897B] mb-2">
                   Select Service(s) *
                 </label>
                 <select
@@ -124,7 +124,7 @@ function BookingModal({
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-semibold text-[#4B6043] mb-2">
+                  <label className="block text-sm font-semibold text-[#00897B] mb-2">
                     Appointment Date *
                   </label>
                   <input
@@ -139,7 +139,7 @@ function BookingModal({
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-[#4B6043] mb-2">
+                  <label className="block text-sm font-semibold text-[#00897B] mb-2">
                     Preferred Time *
                   </label>
                   <input
@@ -154,7 +154,7 @@ function BookingModal({
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-[#4B6043] mb-2">
+                <label className="block text-sm font-semibold text-[#00897B] mb-2">
                   Upload Pre-Appointment Form (Optional)
                 </label>
                 <input
@@ -170,7 +170,7 @@ function BookingModal({
                 <p className="text-sm text-[#2E2E2E]">
                   <strong>Note:</strong> A $100 deposit is required to secure
                   your appointment. Please leave your deposit via Venmo at{" "}
-                  <span className="text-[#4B6043] font-semibold">
+                  <span className="text-[#00897B] font-semibold">
                     @bodyworkworldny
                   </span>
                 </p>
@@ -178,7 +178,7 @@ function BookingModal({
 
               <button
                 type="submit"
-                className="w-full bg-[#4B6043] text-white py-4 rounded-lg font-semibold hover:bg-[#3a4a34] transition-colors duration-300"
+                className="w-full bg-[#FF6B35] text-white py-4 rounded-lg font-semibold hover:bg-[#FFA726] transition-colors duration-300"
               >
                 Submit & Leave Deposit
               </button>

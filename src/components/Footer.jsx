@@ -29,7 +29,7 @@ function Footer({ scrollToSection }) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold text-[#4B6043] mb-4 font-heading">
+            <h3 className="text-2xl font-bold text-[#00897B] mb-4 font-heading">
               BODY WORK WORLD NY
             </h3>
             <p className="text-[#2E2E2E]">
@@ -39,7 +39,7 @@ function Footer({ scrollToSection }) {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold text-[#4B6043] mb-4 font-heading">
+            <h4 className="text-lg font-semibold text-[#00897B] mb-4 font-heading">
               Quick Links
             </h4>
             <ul className="space-y-2">
@@ -47,7 +47,7 @@ function Footer({ scrollToSection }) {
                 <li key={link}>
                   <button
                     onClick={() => scrollToSection(link.toLowerCase())}
-                    className="text-[#2E2E2E] hover:text-[#A8C3A0] transition-colors"
+                    className="text-[#2E2E2E] hover:text-[#26A69A] transition-colors"
                   >
                     {link}
                   </button>
@@ -58,7 +58,7 @@ function Footer({ scrollToSection }) {
 
           {/* Social Media */}
           <div>
-            <h4 className="text-lg font-semibold text-[#4B6043] mb-4 font-heading">
+            <h4 className="text-lg font-semibold text-[#00897B] mb-4 font-heading">
               Follow Us
             </h4>
             <div className="flex space-x-4">
@@ -68,7 +68,7 @@ function Footer({ scrollToSection }) {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-[#A8C3A0] rounded-full flex items-center justify-center hover:bg-[#4B6043] transition-colors duration-300"
+                  className="w-10 h-10 bg-[#26A69A] rounded-full flex items-center justify-center hover:bg-[#00897B] transition-colors duration-300"
                   aria-label={`Follow us on ${social.name}`}
                 >
                   {social.name === "instagram" ? (
@@ -102,7 +102,7 @@ function Footer({ scrollToSection }) {
           </div>
         </div>
 
-        <div className="border-t border-[#A8C3A0] pt-8 text-center">
+        <div className="border-t border-[#26A69A] pt-8 text-center">
           <p className="text-[#2E2E2E]">
             &copy; {new Date().getFullYear()} BODY WORK WORLD NY. All rights
             reserved.
